@@ -20,7 +20,8 @@ export default function Principal({ navigation }) {
 
     return (
         <ScrollView>
-            <View style={estilos.container}>    
+            <View style={estilos.container}> 
+                { usuario.login &&  
                 <>
                     <View style={estilos.fundo} />
                     <View style={estilos.imagemArea}>
@@ -44,7 +45,8 @@ export default function Principal({ navigation }) {
                         </Text>
                     </TouchableOpacity>
                 </>
-
+                }
+                 
                 <TextInput
                     placeholder="Busque por um usuário"
                     autoCapitalize="none"
