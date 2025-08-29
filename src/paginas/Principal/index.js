@@ -39,14 +39,14 @@ export default function Principal({ navigation }) {
                             <Text style={estilos.seguidoresTexto}>Seguindo</Text>
                         </View>
                     </View>
-                    <TouchableOpacity onPress={() => navigation.navigate('Repositorios')}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Repositorios, {id: usuario.id}')}>
                         <Text style={estilos.repositorios}>
                             Ver os repositórios
                         </Text>
                     </TouchableOpacity>
                 </>
                 }
-                 
+
                 <TextInput
                     placeholder="Busque por um usuário"
                     autoCapitalize="none"
